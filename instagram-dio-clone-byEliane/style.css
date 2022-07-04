@@ -10,7 +10,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: #fafafafa;
+  background: linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   margin: 0;
   padding: 0;
   display: flex; 
@@ -32,17 +32,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 100%;
   height: 100vh;
 }
 .instagram-phone {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 40%;
 }
 .instagram-phone video {
-  height: 50rem;
+  height: 40rem;
+  border-radius: 10%;
 }
 
 .instagram-continue {
@@ -52,6 +53,7 @@ body {
   flex-direction: column;
   min-height: 60rem;
   min-height: 40rem;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .group {
@@ -59,10 +61,9 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.5);
   width: 80%;
   padding: 1.3rem 0;
-  border: 1px solid lightgray;
 }
 
 .group:nth-child(1) {
@@ -78,47 +79,13 @@ body {
   align-items: center;
   border-radius: 50%;
   overflow: hidden;
-  background: #0e1538;
-  position: relative;
-  width: 120px;
-  height: 120px;
-
-}
-.profile-photo ::before{
-  content: '';
-  position: absolute;
-  width: 150px;
-  height: 100%;
-  background: linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-  animation: animate 4s linear infinite;
-}
-@keyframes animate {
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
-.profile-photo ::after{
-  content: '';
-  position: absolute;
-  inset: 4px;
-  background: #0e1538;
-  border-radius: 16px;
 }
 
 .profile-photo img {
-  position: relative;
-  height: 6rem;
-  background: rgba(0,0,0,0.5);
-  z-index: 10;
-
+  height: 6rem; 
 }
-
-
 .instagram-login {
-  background-color: #0095f6;
+  background-color: rgba(0, 149, 246, .5);
   color: #ffffff;
   padding: 8px;
   border-radius: 4px;
@@ -129,7 +96,7 @@ body {
   margin-top: 1rem;
 }
 .not-account {
-  color: rgb(160, 160, 160);
+  color: #ffffff;
 }
 
 .link-blue {
@@ -168,19 +135,17 @@ body {
 /* media queries */
 
 
-@media (max-width: 1024px) {
-  .instagram-wrapper {
-      width: 90%;
+@media (max-width: 530px) {
+  .instagram-wrapper
+  .instagram-continue {
+      min-width: 25rem;    
   }
 }
 
-@media (max-width: 650px) {
-  body {
-      background-color: #ffffff;
-  }
+@media (max-width: 930px) {
 
   .instagram-wrapper {
-      width: 90%;
+      width: 60%;    
   }
 
   .instagram-phone {
@@ -189,6 +154,7 @@ body {
 
   .instagram-continue {
       width: 100%;
+      margin-top: 2rem;
   }
   
   .group {
