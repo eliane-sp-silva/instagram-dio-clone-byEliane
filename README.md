@@ -1,4 +1,4 @@
-# Reconstruindo pápina de login do Instagram
+# 🚀 Reconstruindo página de login do Instagram 🚀
 Eu desenvolvi este projeto em CSS e HTML com a Digital Innovation One | Gabriela Pinheiro que teve como desafio reconstruir a página de login do Instagram, foi um belo exercício a minha criatividade, pois não é bem desafiador melhorar ou alterar código de terceiros!
 Na minha versão do projeto fiz as seguintes melhorias:
 - Imagem de smartphone alterada para um vídeo personalizado
